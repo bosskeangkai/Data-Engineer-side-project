@@ -8,14 +8,15 @@ cursor=conn.cursor()
 cursor.execute("""
         CREATE TABLE raw_data(
             province text,
-            cultivated_areas INT,
-            harvested_area INT,
-            product INT,
-            rain float,
-            fertilizer_price float,
-            oil_price float,
-            year INT,
+            cultivated_areas text,
+            harvested_area text,
+            product text,
+            rain text,
+            fertilizer_price text,
+            oil_price text,
+            plant_price text,
+            year text,
             type text
-        )
+        ) 
 """)
 conn.commit()
